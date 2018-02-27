@@ -18,6 +18,35 @@ body{
     z-index: 100;
 }
 
+#initial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.control {
+    background-color: #2a2a2a;
+
+}
+
+#contact-form .control{
+
+    border: dimgray;
+    padding: 15px;
+
+    color: whitesmoke;
+    width:450px;
+
+    margin-bottom: 15px;
+}
+
 #me {
     font-family: 'Oswald', serif;
     line-height: 0.3;
@@ -49,6 +78,25 @@ body{
 
 }
 
+.buttons {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.btn {
+    border: none;
+    padding: 10px;
+    width: 45%;
+    background-color: #2a2a2a;
+}
+
+.btn:hover{
+    background-color: #949494;
+}
+
 h1{
     color: white;
 }
@@ -70,6 +118,11 @@ footer{
     font-family: 'Oswald', serif;
     position: absolute;
     bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+
 }
 
 

@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" >
+
+    <script src="js/jquery.js"></script>
     <script src="js/js.js"></script>
     <script src="js/bg.js"></script>
 
@@ -17,15 +19,29 @@
 
 
 <div class="container">
-    <div id="me">
-        <h1>MICHAŁ JAROSZEWICZ</h1>
-        <h2>FULL STACK DEVELOPER</h2>
-    </div>
-    <div id="social">
-        <a href="https://github.com/sk1nek"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/mjjaroszewicz/"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="#"><i onclick="showContactForm();" class="fas fa-envelope fa-2x"></i></a>
+    <div id="initial">
+        <div id="me">
+            <h1>MICHAŁ JAROSZEWICZ</h1>
+            <h2>FULL STACK DEVELOPER</h2>
+        </div>
+        <div id="social">
+            <a href="https://github.com/sk1nek"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/mjjaroszewicz/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#"><i onclick="showContactForm();" class="fas fa-envelope fa-2x"></i></a>
 
+        </div>
+    </div>
+
+    <div id="contact-form-holder" hidden="hidden">
+        <form id="contact-form">
+            <input class="control" type="email" placeholder="Your email"/>
+            <input class="control" type="text" placeholder="Title"/>
+            <textarea class="control" placeholder="Message"></textarea>
+            <div class="buttons">
+                <button class="btn" type="submit">Submit</button>
+                <button class="btn" onclick="hideContactForm()">Cancel</button>
+            </div>
+        </form>
     </div>
 
     <footer>
