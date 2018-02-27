@@ -34,11 +34,10 @@
 
     <div id="contact-form-holder" hidden="hidden">
         <form id="contact-form">
-            <input class="control" type="email" placeholder="Your email"/>
-            <input class="control" type="text" placeholder="Title"/>
-            <textarea class="control" placeholder="Message"></textarea>
+            <input class="control" id="title" type="text" placeholder="Subject"/>
+            <textarea class="control" id="msg" placeholder="Message"></textarea>
             <div class="buttons">
-                <button class="btn" type="submit">Submit</button>
+                <button class="btn" onclick="sendMail()">Submit</button>
                 <button class="btn" onclick="hideContactForm()">Cancel</button>
             </div>
         </form>
