@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-body{
+body {
     margin: 0;
     padding: 0;
+    background-color: rgb(25, 25, 30);
+    font-family: 'Oswald', serif;
+
 }
 
 .container {
@@ -26,26 +29,34 @@ body{
 
 }
 
+#contact-form-holder{
+    font-size: 16px;
+    padding: 15px 15px 30px;
+    border: 1px solid white;
+    background-color: rgb(25, 25, 30);
+
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
 }
 
-.control {
-    background-color: #2a2a2a;
+#contact-form .control {
 
-}
-
-#contact-form .control{
-
-    border: dimgray;
     padding: 15px;
 
-    color: whitesmoke;
-    width:450px;
+    border: none;
+    border-bottom: 1px solid white;
+
+    background-color: rgb(25, 25, 30);
+    font-size: 16px;
+    color: white;
+    width: 450px;
 
     margin-bottom: 15px;
 }
+
 
 #me {
     font-family: 'Oswald', serif;
@@ -58,7 +69,6 @@ body{
     content: "";
     width: 75%;
     display: inline-block;
-    border-bottom: 2px solid whitesmoke;
 }
 
 #social {
@@ -81,20 +91,24 @@ body{
 .buttons {
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 }
 
 
 .btn {
-    border: none;
     padding: 10px;
-    width: 45%;
-    background-color: #2a2a2a;
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(25, 25, 30);
+
+
 }
 
-.btn:hover{
-    background-color: #949494;
+.btn:hover {
+    background-color: rgb(25, 25, 30);
+
 }
 
 h1{
@@ -121,7 +135,8 @@ footer{
 }
 
 textarea {
-    resize: vertical;
+    resize: none;
+    height: 300px;
 
 }
 
