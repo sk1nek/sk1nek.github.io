@@ -8,6 +8,57 @@ body {
 
 }
 
+h1{
+    color: white;
+}
+
+h4{
+    color: ghostwhite;
+}
+
+html{
+    overflow: hidden;
+}
+
+canvas{
+    position: absolute;
+    z-index: 10;
+}
+
+footer{
+    font-family: 'Oswald', serif;
+    position: absolute;
+    bottom: 20px;
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+
+}
+
+#dummy {
+    z-index: -9999;
+    display: none;
+
+}
+
+#after-submit {
+
+    text-align: center;
+
+}
+
+#after-submit a {
+    text-decoration: none;
+    color: lightgray;
+
+}
+
+#after-submit a:hover{
+    color: white;
+}
+
 .container {
     position: absolute;
     display: flex;
@@ -68,6 +119,8 @@ body {
     z-index: 100;
     content: "";
     width: 75%;
+    height: 1px;
+    background: white;
     display: inline-block;
 }
 
@@ -111,34 +164,6 @@ body {
 
 }
 
-h1{
-    color: white;
-}
-
-h4{
-    color: ghostwhite;
-}
-
-html{
-    overflow: hidden;
-}
-
-canvas{
-    position: absolute;
-    z-index: 10;
-}
-
-footer{
-    font-family: 'Oswald', serif;
-    position: absolute;
-    bottom: 20px;
-}
-
-textarea {
-    resize: none;
-    height: 300px;
-
-}
 
 
 

@@ -33,15 +33,30 @@
     </div>
 
     <div id="contact-form-holder" hidden="hidden">
-        <form id="contact-form">
-            <input class="control" id="title" type="text" placeholder="Subject"/>
-            <textarea class="control" id="msg" placeholder="Message"></textarea>
+        <form id="contact-form"
+              method="post"
+              action="https://jumprock.co/mail/mjaroszewicz"
+              target="dummy"
+        >
+            <input class="control" name="email" type="email" placeholder="Your email"/>
+            <input class="control" name="subject" type="text" placeholder="Subject"/>
+            <textarea class="control" name="message" placeholder="Message"></textarea>
             <div class="buttons">
-                <button class="btn" onclick="sendMail()">Submit</button>
+                <button class="btn" onclick="onEmailSend()" type="submit">Submit</button>
                 <button class="btn" onclick="hideContactForm()">Cancel</button>
             </div>
         </form>
+
     </div>
+
+    <div id="after-submit" hidden="hidden">
+        <h2 id="h1" >
+            Your message has been sent. I will try to contact you as soon as possible.
+        </h2>
+        <p><a href="#" onclick="hideMessage()">Go back</a></p>
+    </div>
+
+    <iframe width="0" height="0" name="dummy" id="dummy"></iframe>
 
     <footer>
         <p>Ⓒ 2018</p>

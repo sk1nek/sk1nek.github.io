@@ -10,15 +10,14 @@ function hideContactForm(){
     $('#initial').show();
 }
 
-function sendMail() {
+function onEmailSend(){
 
-    var title = encodeURIComponent($('#title').val());
-    var msg = encodeURIComponent($('#msg').val());
+    $('#contact-form-holder').hide();
+    $('#after-submit').show();
 
-    console.log(title);
-    console.log(msg);
+}
 
-    var mailTo = "mailto:me@mjaroszewicz.me?subject=" + title  + "&body=" + msg
-    window.location = mailTo;
-
+function hideMessage() {
+    $('#after-submit').hide();
+    $('#initial').show();
 }
